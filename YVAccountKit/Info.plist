@@ -41,5 +41,20 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+    <key>FacebookAppID</key>
+    <string>156079438324245</string>
+    <key>AccountKitClientToken</key>
+    <string>9dd41bbc0628f6b4659fe8a791adef81</string>
+    <key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>ak156079438324245</string>
+            </array>
+        </dict>
+    </array>
+    <key>AccountKitFacebookAppEventsEnabled</key>
+    <integer>1</integer>
 </dict>
 </plist>

@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC6E6CD71FBB0F7B009203CB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6E6CD61FBB0F7B009203CB /* Constants.swift */; };
 		AC74F3611FBAE7F2001AFE56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC74F3601FBAE7F2001AFE56 /* AppDelegate.swift */; };
 		AC74F3631FBAE7F2001AFE56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC74F3621FBAE7F2001AFE56 /* ViewController.swift */; };
 		AC74F3661FBAE7F2001AFE56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC74F3641FBAE7F2001AFE56 /* Main.storyboard */; };
 		AC74F3681FBAE7F2001AFE56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC74F3671FBAE7F2001AFE56 /* Assets.xcassets */; };
 		AC74F36B1FBAE7F2001AFE56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC74F3691FBAE7F2001AFE56 /* LaunchScreen.storyboard */; };
+		AC74F3751FBAEAD7001AFE56 /* AccountKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC74F3731FBAEAD6001AFE56 /* AccountKit.framework */; };
+		AC74F3761FBAEAD7001AFE56 /* AccountKitStrings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AC74F3741FBAEAD7001AFE56 /* AccountKitStrings.bundle */; };
+		AC74F37E1FBB0DB7001AFE56 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC74F37D1FBB0DB7001AFE56 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC6E6CD61FBB0F7B009203CB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		AC74F35D1FBAE7F2001AFE56 /* YVAccountKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YVAccountKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC74F3601FBAE7F2001AFE56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC74F3621FBAE7F2001AFE56 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,9 @@
 		AC74F3671FBAE7F2001AFE56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC74F36A1FBAE7F2001AFE56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC74F36C1FBAE7F2001AFE56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC74F3731FBAEAD6001AFE56 /* AccountKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AccountKit.framework; sourceTree = "<group>"; };
+		AC74F3741FBAEAD7001AFE56 /* AccountKitStrings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AccountKitStrings.bundle; sourceTree = "<group>"; };
+		AC74F37D1FBB0DB7001AFE56 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,12 +37,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC74F3751FBAEAD7001AFE56 /* AccountKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC6E6CD81FBB19E3009203CB /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				AC74F3641FBAE7F2001AFE56 /* Main.storyboard */,
+				AC74F3691FBAE7F2001AFE56 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		AC74F3541FBAE7F2001AFE56 = {
 			isa = PBXGroup;
 			children = (
@@ -54,14 +72,41 @@
 		AC74F35F1FBAE7F2001AFE56 /* YVAccountKit */ = {
 			isa = PBXGroup;
 			children = (
-				AC74F3601FBAE7F2001AFE56 /* AppDelegate.swift */,
-				AC74F3621FBAE7F2001AFE56 /* ViewController.swift */,
-				AC74F3641FBAE7F2001AFE56 /* Main.storyboard */,
+				AC6E6CD81FBB19E3009203CB /* Storyboards */,
+				AC74F37A1FBB0D35001AFE56 /* Common */,
+				AC74F3771FBB0CF9001AFE56 /* ViewControllers */,
+				AC74F3721FBAEAB3001AFE56 /* Frameworks */,
 				AC74F3671FBAE7F2001AFE56 /* Assets.xcassets */,
-				AC74F3691FBAE7F2001AFE56 /* LaunchScreen.storyboard */,
 				AC74F36C1FBAE7F2001AFE56 /* Info.plist */,
 			);
 			path = YVAccountKit;
+			sourceTree = "<group>";
+		};
+		AC74F3721FBAEAB3001AFE56 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC74F3731FBAEAD6001AFE56 /* AccountKit.framework */,
+				AC74F3741FBAEAD7001AFE56 /* AccountKitStrings.bundle */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		AC74F3771FBB0CF9001AFE56 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AC74F3621FBAE7F2001AFE56 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		AC74F37A1FBB0D35001AFE56 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				AC74F3601FBAE7F2001AFE56 /* AppDelegate.swift */,
+				AC74F37D1FBB0DB7001AFE56 /* Extensions.swift */,
+				AC6E6CD61FBB0F7B009203CB /* Constants.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +171,7 @@
 				AC74F36B1FBAE7F2001AFE56 /* LaunchScreen.storyboard in Resources */,
 				AC74F3681FBAE7F2001AFE56 /* Assets.xcassets in Resources */,
 				AC74F3661FBAE7F2001AFE56 /* Main.storyboard in Resources */,
+				AC74F3761FBAEAD7001AFE56 /* AccountKitStrings.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,8 +182,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC74F37E1FBB0DB7001AFE56 /* Extensions.swift in Sources */,
 				AC74F3631FBAE7F2001AFE56 /* ViewController.swift in Sources */,
 				AC74F3611FBAE7F2001AFE56 /* AppDelegate.swift in Sources */,
+				AC6E6CD71FBB0F7B009203CB /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +324,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4F7SW76LL6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/YVAccountKit/Frameworks",
+				);
 				INFOPLIST_FILE = YVAccountKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yash.YVAccountKit;
@@ -291,6 +343,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4F7SW76LL6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/YVAccountKit/Frameworks",
+				);
 				INFOPLIST_FILE = YVAccountKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yash.YVAccountKit;
